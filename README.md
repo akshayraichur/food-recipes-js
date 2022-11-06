@@ -1,12 +1,8 @@
-## Javascript App Template
+## Recipe App in Vanilla Javascript
 
-This app was bootstraped with [new-javascript-app](https://www.npmjs.com/package/new-javascript-app)
+#### Screenshots
 
-#### Get Started
-
-- Open `index.html` with any live server.
-
-#### Learn More
-
-- Package Details: [new-javascript-app](https://www.npmjs.com/package/new-javascript-app)
-- Author: [Linkedin](https://www.linkedin.com/in/akshay-raichur) , [GitHub](https://github.com/akshayraichur)
+![home page](./assets/recipe-1.jpg)
+![search page](./assets/Screenshot%202022-11-06%20at%206.49.32%20PM.png)
+![result page](./assets/recipe-3.jpg)
+![detail page](./assets/recipe-4.jpg)
