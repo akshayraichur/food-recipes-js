@@ -24,8 +24,8 @@ export const createMealCard = (data, type) => {
   mealElement.classList.add('meal');
   mealElement.setAttribute('data-meal-id', data.idMeal);
   mealElement.innerHTML = `
-    <div class="img-container">
-      <img src="${data.strMealThumb}" alt="dish-image" class="${data.strMeal}" loading="lazy" />
+    <div class="img-container" data-meal-id="${data.idMeal}">
+      <img src="${data.strMealThumb}" alt="dish-image" class="meal-img" loading="lazy" data-meal-id="${data.idMeal}" />
     </div>
 
     <div class="meal-info" data-meal-id="${data.idMeal}">

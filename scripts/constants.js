@@ -14,6 +14,7 @@ export const errorMessage = document.querySelector('.error-message');
 export const modalContainer = document.querySelector('.modal-container');
 export const modalEl = document.querySelector('.modal');
 export const modalCloseBtn = document.querySelector('.modal-close-btn');
+export const mealImg = document.querySelector('.meal-img');
 
 export const SEARCH_URL = 'https://www.themealdb.com/api/json/v1/1/search.php';
 export const SEARCH_QUERY_KEY = '?s=';

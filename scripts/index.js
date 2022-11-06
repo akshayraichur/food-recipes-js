@@ -17,6 +17,7 @@ import {
   modalContainer,
   LOOKUP_URL,
   LOOKUP_QUERY_KEY,
+  mealImg,
 } from './constants.js';
 import {
   clearSearchInput,
@@ -109,6 +110,14 @@ const fetchMealDetails = async (e) => {
   updateModalContents(data?.meals[0]);
 };
 
+const getMealDetails = async (e) => {
+  const mealID = e.target.getAttribute('data-meal-id');
+  modalContainer.classList.add('show');
+  let data = await fetchData(LOOKUP_URL, LOOKUP_QUERY_KEY, mealID);
+
+  updateModalContents(data?.meals[0]);
+};
+
 const App = () => {
   // event listeners
   formContainer.addEventListener('submit', handleFormSubmit);
@@ -119,7 +128,14 @@ const App = () => {
     modalContainer.classList.remove('show')
   );
 
+  // gets the details of the meal if clicked anywhere on meal card
   mealsContainer.addEventListener('click', fetchMealDetails);
+
+  document.addEventListener('click', (e) => {
+    if (e.target && e.target.className === 'meal-img') {
+      getMealDetails(e);
+    }
+  });
 };
 
 App();
