@@ -54,10 +54,6 @@ main {
   color: var(--primary-color);
 }
 
-.search-input:focus {
-  outline: var(--seconndary-color) solid 2px;
-}
-
 .submit-btn,
 .random-btn {
   height: 2.5rem;
