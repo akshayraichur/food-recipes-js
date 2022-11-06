@@ -52,6 +52,7 @@ main {
   transition: all 0.3s ease;
   background-color: var(--bg-color);
   color: var(--primary-color);
+  outline: 0;
 }
 
 .submit-btn,
