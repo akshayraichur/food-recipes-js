@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Recipes &nbsp; 🥘</title>
+
+    <link
+      rel="shortcut icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥘</text></svg>"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥘</text></svg>"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script type="module" src="./scripts/index.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="modal-container">
+      <div class="modal">
+        <div class="modal-title-container">
+          <h2 class="modal-title"></h2>
+          <button class="modal-close-btn">
+            <i class="fas fa-close"></i>
+          </button>
+        </div>
+        <hr />
+        <div class="modal-contents">
+          <div class="modal-img-container">
+            <img src="" alt="modal-thumnail" class="modal-img-thumb" />
+          </div>
+          <div class="modal-info-container">
+            <p class="modal-area"></p>
+            <p class="modal-category"></p>
+            <p class="modal-tags"></p>
+            <div class="modal-ingredients">
+              <p>Ingredients :</p>
+              <p class="modal-ingredients-data"></p>
+            </div>
+            <p class="modal-instructions"></p>
+
+            <a href="#" target="_blank" class="modal-btn-yt">
+              <button class="meal-button">Youtube</button>
+            </a>
+            <a href="#" target="_blank" class="modal-btn-src">
+              <button class="meal-button">Source</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="container">
+        <h1>🍕 All About Food Recipes 🍕</h1>
+
+        <form class="form-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search Recipes or food keywords...."
+            autofocus
+          />
+          <button class="close-btn" type="button">
+            <i class="fas fa-close"></i>
+          </button>
+          <button class="submit-btn" type="submit">
+            <i class="fas fa-magnifying-glass"></i>
+          </button>
+
+          <button
+            class="random-btn"
+            aria-label="search for random meal"
+            type="button"
+          >
+            <i class="fas fa-random"></i>
+          </button>
+        </form>
+
+        <div class="section-container"></div>
+
+        <div class="error-container">
+          <p class="error-message"></p>
+        </div>
+      </section>
+
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+
+      <section class="result-container">
+        <div class="results">
+          <h3 class="result-heading"></h3>
+          <div class="meals" id="meals"></div>
+          <div class="single-meal"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        This project is built by Akshay Raichur,
+        <span><a href="https://github.com/akshayraichur">checkout</a></span> for
+        more
+      </p>
+    </footer>
+  </body>
+</html>
