@@ -10,6 +10,7 @@ import {
 export const buildURLString = (url, queryParam, value) =>
   `${url}${queryParam ?? ''}${value ?? ''}`;
 
+// TODO: Error Handling
 export const fetchData = async (url, queryParam, value) => {
   let endpoint = buildURLString(url, queryParam, value);
 
